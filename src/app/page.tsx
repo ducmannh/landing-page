@@ -3,12 +3,12 @@ import QuickApplyCard from "@/components/QuickApplyCard";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-[var(--bg)] text-[var(--ink)]">
+    <div className="min-h-screen flex flex-col bg-[var(--bg)] text-[var(--ink)] pb-20 sm:pb-0 overflow-x-hidden">
       {/* Header */}
       <header className="sticky top-0 z-30 bg-[var(--surface)]/95 backdrop-blur-md border-b border-[var(--line)] shadow-[0_2px_16px_rgba(25,28,33,0.04)]">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between gap-4">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 py-2.5 sm:py-3.5 flex items-center justify-between gap-3 sm:gap-4">
           <a
-            className="inline-flex items-center rounded-lg leading-none"
+            className="inline-flex items-center rounded-lg leading-none shrink-0"
             href="https://smartland.vn"
             target="_blank"
             rel="noopener noreferrer"
@@ -19,7 +19,7 @@ export default function Home() {
               alt="Smartland - 21 năm phân phối bất động sản"
               width={168}
               height={46}
-              className="h-10 sm:h-11 w-auto block object-contain"
+              className="h-8 sm:h-11 w-auto block object-contain"
               priority
             />
           </a>
@@ -41,7 +41,7 @@ export default function Home() {
           </nav>
 
           <a
-            className="btn-primary inline-flex items-center gap-2 !text-white font-semibold rounded-lg py-2 px-3.5 sm:py-2.5 sm:px-5 text-sm sm:text-[14px] hover:bg-[var(--accent-hover)] hover:!text-white transition-all no-underline whitespace-nowrap shadow-[0_2px_10px_rgba(163,29,36,0.22)]"
+            className="btn-primary inline-flex items-center gap-1.5 sm:gap-2 !text-white font-semibold rounded-lg py-1.5 px-3 sm:py-2.5 sm:px-5 text-xs sm:text-[14px] hover:bg-[var(--accent-hover)] hover:!text-white transition-all no-underline whitespace-nowrap shadow-[0_2px_10px_rgba(163,29,36,0.22)] active:scale-[0.98]"
             href="https://zalo.me/0915531904"
             target="_blank"
             rel="noopener noreferrer"
@@ -53,36 +53,36 @@ export default function Home() {
 
       {/* Hero Band */}
       <div className="hero-band-bg hero-band-circles text-[var(--ink)] relative overflow-hidden border-b border-[var(--line)]">
-        <section className="max-w-[1140px] mx-auto px-4 sm:px-6 py-10 sm:py-16 relative z-10">
-          <div className="flex flex-wrap items-center gap-2.5">
-            <span className="text-xs tracking-[0.14em] uppercase text-[var(--brass)] font-bold">
-              Tuyển dụng · Khối Marketing &amp; Truyền thông
+        <section className="max-w-[1140px] mx-auto px-4 sm:px-6 py-6 sm:py-16 relative z-10">
+          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2.5">
+            <span className="text-[10.5px] sm:text-xs tracking-[0.1em] sm:tracking-[0.14em] uppercase text-[var(--brass)] font-bold">
+              Tuyển dụng · Marketing &amp; Truyền thông
             </span>
-            <span className="inline-block text-[11px] font-semibold text-[var(--brass)] bg-[var(--gold-light)] px-3 py-0.5 rounded-full border border-[var(--gold)]/35 uppercase tracking-wider">
+            <span className="inline-block text-[10px] sm:text-[11px] font-semibold text-[var(--brass)] bg-[var(--gold-light)] px-2.5 py-0.5 rounded-full border border-[var(--gold)]/35 uppercase tracking-wider">
               Smartland Miền Bắc
             </span>
           </div>
 
-          <h1 className="text-[32px] sm:text-5xl lg:text-[58px] font-bold mt-3 text-[var(--ink)] leading-[1.18]">
+          <h1 className="text-[24px] sm:text-4xl md:text-5xl lg:text-[56px] font-bold mt-2 sm:mt-3 text-[var(--ink)] leading-[1.25] sm:leading-[1.18] tracking-tight">
             Chuyên Viên <span className="text-[var(--brass)]">Event MKT</span> (Hà Nội)
           </h1>
 
           {/* Recruitment status banner matching user's reference */}
-          <div className="mt-5 p-4 sm:p-5 rounded-2xl border-2 border-dashed border-[var(--accent)]/45 bg-[var(--surface)] flex flex-wrap items-center justify-between gap-4 shadow-[0_4px_20px_rgba(163,29,36,0.06)] max-w-[720px]">
+          <div className="mt-4 sm:mt-5 p-3.5 sm:p-5 rounded-2xl border-2 border-dashed border-[var(--accent)]/45 bg-[var(--surface)] flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 shadow-[0_4px_20px_rgba(163,29,36,0.06)] max-w-[720px]">
             <div>
-              <div className="font-bold text-[var(--ink)] text-base sm:text-lg">
+              <div className="font-bold text-[var(--ink)] text-[15px] sm:text-lg">
                 Chuyên Viên Event MKT (Hà Nội)
               </div>
-              <div className="flex flex-wrap items-center gap-3 sm:gap-5 text-xs sm:text-[14px] text-[var(--muted)] mt-1.5">
+              <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs sm:text-[14px] text-[var(--muted)] mt-1.5 sm:mt-1">
                 <span>Số lượng: <b className="text-[var(--ink)] font-semibold">1</b></span>
                 <span className="text-[var(--line)]">|</span>
                 <span>Thời hạn: <b className="text-[var(--accent)] font-semibold">Không thời hạn</b></span>
-                <span className="text-[var(--line)]">|</span>
-                <span>Địa điểm: <b className="text-[var(--ink)] font-semibold">Thanh Xuân, Hà Nội</b></span>
+                <span className="text-[var(--line)] hidden xs:inline">|</span>
+                <span className="w-full xs:w-auto">Địa điểm: <b className="text-[var(--ink)] font-semibold">Thanh Xuân, Hà Nội</b></span>
               </div>
             </div>
             <a
-              className="btn-primary inline-flex items-center justify-center !text-white font-semibold rounded-lg py-2.5 px-5 text-sm hover:bg-[var(--accent-hover)] hover:!text-white transition-all no-underline shadow-md flex-none"
+              className="btn-primary inline-flex items-center justify-center !text-white font-semibold rounded-lg py-2.5 px-5 text-sm hover:bg-[var(--accent-hover)] hover:!text-white transition-all no-underline shadow-md w-full sm:w-auto text-center flex-none active:scale-[0.98]"
               href="https://zalo.me/0915531904"
               target="_blank"
               rel="noopener noreferrer"
@@ -91,48 +91,48 @@ export default function Home() {
             </a>
           </div>
 
-          <p className="max-w-[65ch] text-[var(--muted)] text-base sm:text-lg mt-5 leading-relaxed">
+          <p className="max-w-[65ch] text-[var(--muted)] text-[13.5px] sm:text-base lg:text-lg mt-3.5 sm:mt-5 leading-relaxed">
             Gia nhập Smartland – thương hiệu 21 năm uy tín phân phối bất động sản cao cấp tại Việt Nam. Đồng hành cùng các Chủ đầu tư hàng đầu (Masterise Homes, Vingroup, Ecopark, Phú Long...), chủ động đề xuất ý tưởng concept, điều phối tổ chức các sự kiện quy mô (Kick-off, Activation, Site tour), sản xuất tư liệu hình ảnh/flycam sắc nét và đại diện công ty tại thị trường miền Bắc.
           </p>
 
-          <dl className="grid grid-cols-2 lg:grid-cols-4 mt-8 border border-[var(--line)] border-t-[3px] border-t-[var(--gold)] rounded-2xl overflow-hidden bg-[var(--surface)] shadow-[0_8px_25px_rgba(25,28,33,0.04)]">
-            <div className="p-4 sm:p-5 border-r border-b lg:border-b-0 border-[var(--line)] min-w-0">
-              <dt className="text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-semibold">
+          <dl className="grid grid-cols-2 lg:grid-cols-4 mt-5 sm:mt-8 border border-[var(--line)] border-t-[3px] border-t-[var(--gold)] rounded-2xl overflow-hidden bg-[var(--surface)] shadow-[0_8px_25px_rgba(25,28,33,0.04)]">
+            <div className="p-3 sm:p-5 border-r border-b lg:border-b-0 border-[var(--line)] min-w-0">
+              <dt className="text-[10px] sm:text-[11px] tracking-[0.08em] sm:tracking-[0.1em] uppercase text-[var(--brass)] font-semibold truncate">
                 Địa điểm
               </dt>
-              <dd className="mt-1 font-bold text-[var(--ink)] text-sm sm:text-base">
+              <dd className="mt-0.5 sm:mt-1 font-bold text-[var(--ink)] text-xs sm:text-base leading-snug">
                 Thanh Xuân, Hà Nội
               </dd>
             </div>
-            <div className="p-4 sm:p-5 border-b lg:border-b-0 lg:border-r border-[var(--line)] min-w-0">
-              <dt className="text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-semibold">
+            <div className="p-3 sm:p-5 border-b lg:border-b-0 lg:border-r border-[var(--line)] min-w-0">
+              <dt className="text-[10px] sm:text-[11px] tracking-[0.08em] sm:tracking-[0.1em] uppercase text-[var(--brass)] font-semibold truncate">
                 Số lượng &amp; Hạn nộp
               </dt>
-              <dd className="mt-1 font-bold text-[var(--ink)] text-sm sm:text-base">
-                1 nhân sự · Không thời hạn
+              <dd className="mt-0.5 sm:mt-1 font-bold text-[var(--ink)] text-xs sm:text-base leading-snug">
+                1 người · Liên tục
               </dd>
             </div>
-            <div className="p-4 sm:p-5 border-r border-[var(--line)] min-w-0">
-              <dt className="text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-semibold">
+            <div className="p-3 sm:p-5 border-r border-[var(--line)] min-w-0">
+              <dt className="text-[10px] sm:text-[11px] tracking-[0.08em] sm:tracking-[0.1em] uppercase text-[var(--brass)] font-semibold truncate">
                 Kinh nghiệm
               </dt>
-              <dd className="mt-1 font-bold text-[var(--ink)] text-sm sm:text-base">
-                Từ 3 năm Marketing / Event
+              <dd className="mt-0.5 sm:mt-1 font-bold text-[var(--ink)] text-xs sm:text-base leading-snug">
+                Từ 3 năm MKT / Event
               </dd>
             </div>
-            <div className="p-4 sm:p-5 min-w-0">
-              <dt className="text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-semibold">
+            <div className="p-3 sm:p-5 min-w-0">
+              <dt className="text-[10px] sm:text-[11px] tracking-[0.08em] sm:tracking-[0.1em] uppercase text-[var(--brass)] font-semibold truncate">
                 Thu nhập
               </dt>
-              <dd className="mt-1 font-bold text-[var(--ink)] text-sm sm:text-base">
+              <dd className="mt-0.5 sm:mt-1 font-bold text-[var(--ink)] text-xs sm:text-base leading-snug">
                 Cạnh tranh theo năng lực
               </dd>
             </div>
           </dl>
 
-          <div className="flex flex-wrap gap-3 mt-7">
+          <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-3 mt-5 sm:mt-7">
             <a
-              className="btn-primary inline-flex items-center gap-2 !text-white font-semibold rounded-lg py-2.5 px-5 text-[15px] hover:bg-[var(--accent-hover)] hover:!text-white transition-all no-underline shadow-sm"
+              className="btn-primary inline-flex items-center justify-center gap-2 !text-white font-semibold rounded-lg py-3 sm:py-2.5 px-5 text-sm sm:text-[15px] hover:bg-[var(--accent-hover)] hover:!text-white transition-all no-underline shadow-sm text-center active:scale-[0.99]"
               href="https://zalo.me/0915531904"
               target="_blank"
               rel="noopener noreferrer"
@@ -140,7 +140,7 @@ export default function Home() {
               Gửi hồ sơ qua Zalo
             </a>
             <a
-              className="inline-flex items-center gap-2 bg-[var(--surface)] text-[var(--ink)] border border-[var(--line)] hover:border-[var(--gold)] hover:text-[var(--brass)] font-semibold rounded-lg py-2.5 px-5 text-[15px] transition-all no-underline shadow-sm"
+              className="inline-flex items-center justify-center gap-2 bg-[var(--surface)] text-[var(--ink)] border border-[var(--line)] hover:border-[var(--gold)] hover:text-[var(--brass)] font-semibold rounded-lg py-3 sm:py-2.5 px-5 text-sm sm:text-[15px] transition-all no-underline shadow-sm text-center active:scale-[0.99]"
               href="#chi-tiet-cong-viec"
             >
               Xem chi tiết công việc
@@ -150,109 +150,109 @@ export default function Home() {
       </div>
 
       {/* About Smartland Section (Theo nội dung website smartland.vn) */}
-      <section id="gioi-thieu" className="bg-[var(--surface)] border-b border-[var(--line)] scroll-mt-16">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 py-14 sm:py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-12 items-center">
+      <section id="gioi-thieu" className="bg-[var(--surface)] border-b border-[var(--line)] scroll-mt-14 sm:scroll-mt-16">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 py-8 sm:py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-6 sm:gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--gold-light)] border border-[var(--gold)]/30 text-xs font-bold uppercase tracking-[0.12em] text-[var(--brass)] mb-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--gold-light)] border border-[var(--gold)]/30 text-[10.5px] sm:text-xs font-bold uppercase tracking-[0.08em] sm:tracking-[0.12em] text-[var(--brass)] mb-2 sm:mb-3">
                 <span>Về Công ty TNHH Bất động sản Smartland</span>
               </div>
-              <h2 className="text-2xl sm:text-[32px] font-bold text-[var(--ink)] leading-tight">
+              <h2 className="text-xl sm:text-2xl md:text-[32px] font-bold text-[var(--ink)] leading-snug">
                 21 năm tiên phong tư vấn &amp; phân phối bất động sản cao cấp
               </h2>
-              <p className="mt-4 text-[var(--muted)] text-base sm:text-[17px] leading-relaxed">
+              <p className="mt-2.5 sm:mt-4 text-[var(--muted)] text-[13.5px] sm:text-base leading-relaxed">
                 Được thành lập từ năm 2004, <b>Smartland</b> là một trong những đơn vị phân phối và tiếp thị bất động sản chuyên nghiệp uy tín hàng đầu tại Việt Nam. Trải qua hơn hai thập kỷ hình thành và phát triển vững chắc, Smartland tự hào là đối tác chiến lược tin cậy của các tập đoàn địa ốc danh tiếng hàng đầu như: <b>Masterise Homes, Vingroup, Ecopark, Phú Long, Keppel Land, Refico...</b>
               </p>
-              <p className="mt-3 text-[var(--muted)] text-[15px] leading-relaxed">
+              <p className="mt-2 sm:mt-3 text-[var(--muted)] text-[13.5px] sm:text-[15px] leading-relaxed">
                 Với mạng lưới văn phòng trải dài từ TP. Hồ Chí Minh, Hà Nội, Đà Nẵng, Nha Trang, Phú Quốc, Bắc Ninh đến Hải Phòng, Smartland không ngừng kiến tạo những chuẩn mực dịch vụ cao nhất, đem lại tổ ấm an cư lý tưởng và giải pháp sinh lời bền vững cho hàng vạn khách hàng trên toàn quốc.
               </p>
             </div>
 
-            {/* Impressive Numbers Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 sm:gap-4 p-5 sm:p-6 rounded-2xl bg-[var(--bg)] border border-[var(--line)] shadow-inner">
-              <div className="bg-[var(--surface)] py-4 px-2 sm:p-4 rounded-xl border border-[var(--line)] text-center shadow-sm flex flex-col items-center justify-center min-w-0">
-                <b className="block text-2xl sm:text-[26px] xl:text-[28px] text-[var(--brass)] tabular-nums leading-none font-extrabold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
+            {/* Impressive Numbers Grid (2 cols on mobile, 3 cols on sm/desktop) */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3.5 p-3 sm:p-6 rounded-2xl bg-[var(--bg)] border border-[var(--line)] shadow-inner">
+              <div className="bg-[var(--surface)] py-3 px-2 sm:py-4 sm:px-3 rounded-xl border border-[var(--line)] text-center shadow-xs flex flex-col items-center justify-center min-w-0">
+                <b className="block text-xl sm:text-[26px] xl:text-[28px] text-[var(--brass)] tabular-nums leading-none font-extrabold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
                   21<span className="text-[0.75em] font-bold text-[var(--accent)] ml-0.5">+</span>
                 </b>
-                <span className="text-[12px] sm:text-[13px] text-[var(--muted)] font-medium mt-1.5 block leading-snug">Năm phát triển</span>
+                <span className="text-[11px] sm:text-[13px] text-[var(--muted)] font-medium mt-1.5 block leading-snug">Năm phát triển</span>
               </div>
-              <div className="bg-[var(--surface)] py-4 px-2 sm:p-4 rounded-xl border border-[var(--line)] text-center shadow-sm flex flex-col items-center justify-center min-w-0">
-                <b className="block text-2xl sm:text-[26px] xl:text-[28px] text-[var(--brass)] tabular-nums leading-none font-extrabold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
+              <div className="bg-[var(--surface)] py-3 px-2 sm:py-4 sm:px-3 rounded-xl border border-[var(--line)] text-center shadow-xs flex flex-col items-center justify-center min-w-0">
+                <b className="block text-xl sm:text-[26px] xl:text-[28px] text-[var(--brass)] tabular-nums leading-none font-extrabold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
                   300<span className="text-[0.75em] font-bold text-[var(--accent)] ml-0.5">+</span>
                 </b>
-                <span className="text-[12px] sm:text-[13px] text-[var(--muted)] font-medium mt-1.5 block leading-snug">Dự án đã triển khai</span>
+                <span className="text-[11px] sm:text-[13px] text-[var(--muted)] font-medium mt-1.5 block leading-snug">Dự án đã triển khai</span>
               </div>
-              <div className="bg-[var(--surface)] py-4 px-2 sm:p-4 rounded-xl border border-[var(--line)] text-center shadow-sm flex flex-col items-center justify-center min-w-0">
-                <b className="block text-2xl sm:text-[24px] xl:text-[26px] text-[var(--brass)] tabular-nums leading-none font-extrabold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
+              <div className="bg-[var(--surface)] py-3 px-2 sm:py-4 sm:px-3 rounded-xl border border-[var(--line)] text-center shadow-xs flex flex-col items-center justify-center min-w-0">
+                <b className="block text-xl sm:text-[24px] xl:text-[26px] text-[var(--brass)] tabular-nums leading-none font-extrabold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
                   10.000<span className="text-[0.75em] font-bold text-[var(--accent)] ml-0.5">+</span>
                 </b>
-                <span className="text-[12px] sm:text-[13px] text-[var(--muted)] font-medium mt-1.5 block leading-snug">Sản phẩm bán ra</span>
+                <span className="text-[11px] sm:text-[13px] text-[var(--muted)] font-medium mt-1.5 block leading-snug">Sản phẩm bán ra</span>
               </div>
-              <div className="bg-[var(--surface)] py-4 px-2 sm:p-4 rounded-xl border border-[var(--line)] text-center shadow-sm flex flex-col items-center justify-center min-w-0">
-                <b className="block text-2xl sm:text-[26px] xl:text-[28px] text-[var(--brass)] tabular-nums leading-none font-extrabold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
+              <div className="bg-[var(--surface)] py-3 px-2 sm:py-4 sm:px-3 rounded-xl border border-[var(--line)] text-center shadow-xs flex flex-col items-center justify-center min-w-0">
+                <b className="block text-xl sm:text-[26px] xl:text-[28px] text-[var(--brass)] tabular-nums leading-none font-extrabold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
                   3.000<span className="text-[0.75em] font-bold text-[var(--accent)] ml-0.5">+</span>
                 </b>
-                <span className="text-[12px] sm:text-[13px] text-[var(--muted)] font-medium mt-1.5 block leading-snug">Nhân viên &amp; Chuyên viên</span>
+                <span className="text-[11px] sm:text-[13px] text-[var(--muted)] font-medium mt-1.5 block leading-snug">Nhân viên &amp; Chuyên viên</span>
               </div>
-              <div className="bg-[var(--surface)] py-4 px-2 sm:p-4 rounded-xl border border-[var(--line)] text-center shadow-sm flex flex-col items-center justify-center min-w-0">
-                <b className="block text-2xl sm:text-[26px] xl:text-[28px] text-[var(--brass)] tabular-nums leading-none font-extrabold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
+              <div className="bg-[var(--surface)] py-3 px-2 sm:py-4 sm:px-3 rounded-xl border border-[var(--line)] text-center shadow-xs flex flex-col items-center justify-center min-w-0">
+                <b className="block text-xl sm:text-[26px] xl:text-[28px] text-[var(--brass)] tabular-nums leading-none font-extrabold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
                   100<span className="text-[0.75em] font-bold text-[var(--accent)] ml-0.5">+</span>
                 </b>
-                <span className="text-[12px] sm:text-[13px] text-[var(--muted)] font-medium mt-1.5 block leading-snug">Đối tác chiến lược</span>
+                <span className="text-[11px] sm:text-[13px] text-[var(--muted)] font-medium mt-1.5 block leading-snug">Đối tác chiến lược</span>
               </div>
-              <div className="bg-[var(--surface)] py-4 px-2 sm:p-4 rounded-xl border border-[var(--line)] text-center shadow-sm flex flex-col items-center justify-center min-w-0">
-                <b className="block text-2xl sm:text-[26px] xl:text-[28px] text-[var(--brass)] tabular-nums leading-none font-extrabold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
+              <div className="bg-[var(--surface)] py-3 px-2 sm:py-4 sm:px-3 rounded-xl border border-[var(--line)] text-center shadow-xs flex flex-col items-center justify-center min-w-0">
+                <b className="block text-xl sm:text-[26px] xl:text-[28px] text-[var(--brass)] tabular-nums leading-none font-extrabold tracking-tight" style={{ fontFamily: "var(--font-display)" }}>
                   15<span className="text-[0.75em] font-bold text-[var(--accent)] ml-0.5">+</span>
                 </b>
-                <span className="text-[12px] sm:text-[13px] text-[var(--muted)] font-medium mt-1.5 block leading-snug">Văn phòng toàn quốc</span>
+                <span className="text-[11px] sm:text-[13px] text-[var(--muted)] font-medium mt-1.5 block leading-snug">Văn phòng toàn quốc</span>
               </div>
             </div>
           </div>
 
           {/* Tầm nhìn - Sứ mệnh - Giá trị cốt lõi */}
-          <div id="tam-nhin-su-menh" className="mt-14 pt-12 border-t border-[var(--line)] scroll-mt-20">
-            <div className="text-center max-w-[680px] mx-auto mb-10">
-              <span className="text-xs tracking-[0.14em] uppercase text-[var(--brass)] font-bold block mb-1">
+          <div id="tam-nhin-su-menh" className="mt-8 sm:mt-14 pt-6 sm:pt-12 border-t border-[var(--line)] scroll-mt-14 sm:scroll-mt-20">
+            <div className="text-center max-w-[680px] mx-auto mb-5 sm:mb-10">
+              <span className="text-[10.5px] sm:text-xs tracking-[0.14em] uppercase text-[var(--brass)] font-bold block mb-1">
                 Định hướng chiến lược
               </span>
-              <h3 className="text-2xl sm:text-3xl font-bold text-[var(--ink)]">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[var(--ink)] leading-snug">
                 Tầm nhìn, Sứ mệnh &amp; Giá trị cốt lõi
               </h3>
-              <p className="text-[var(--muted)] text-sm sm:text-base mt-2">
+              <p className="text-[var(--muted)] text-xs sm:text-base mt-1.5 sm:mt-2">
                 Nền tảng vững chắc làm nên thương hiệu Smartland uy tín trên thị trường bất động sản Việt Nam
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-6">
               {/* Tầm nhìn */}
-              <div className="bg-[var(--bg)] border border-[var(--line)] rounded-2xl p-6 sm:p-7 relative hover:border-[var(--gold)] transition-all shadow-sm">
-                <div className="w-10 h-10 rounded-xl bg-[var(--gold-light)] text-[var(--brass)] flex items-center justify-center font-bold text-lg mb-4 border border-[var(--gold)]/30">
+              <div className="bg-[var(--bg)] border border-[var(--line)] rounded-2xl p-4 sm:p-7 relative hover:border-[var(--gold)] transition-all shadow-xs">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[var(--gold-light)] text-[var(--brass)] flex items-center justify-center font-bold text-base sm:text-lg mb-2.5 sm:mb-4 border border-[var(--gold)]/30">
                   🎯
                 </div>
-                <h4 className="text-lg font-bold text-[var(--ink)]">Tầm nhìn</h4>
-                <p className="text-[var(--muted)] text-sm leading-relaxed mt-2.5">
+                <h4 className="text-[16px] sm:text-lg font-bold text-[var(--ink)]">Tầm nhìn</h4>
+                <p className="text-[var(--muted)] text-[13px] sm:text-sm leading-relaxed mt-1.5 sm:mt-2">
                   Giữ vững vị thế dẫn đầu trong mảng tư vấn và phân phối bất động sản, trở thành đối tác chiến lược đáng tin cậy hàng đầu với mọi Chủ đầu tư, khách hàng và đối tác trên cả nước.
                 </p>
               </div>
 
               {/* Sứ mệnh */}
-              <div className="bg-[var(--bg)] border border-[var(--line)] rounded-2xl p-6 sm:p-7 relative hover:border-[var(--gold)] transition-all shadow-sm">
-                <div className="w-10 h-10 rounded-xl bg-[var(--gold-light)] text-[var(--brass)] flex items-center justify-center font-bold text-lg mb-4 border border-[var(--gold)]/30">
+              <div className="bg-[var(--bg)] border border-[var(--line)] rounded-2xl p-4 sm:p-7 relative hover:border-[var(--gold)] transition-all shadow-xs">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[var(--gold-light)] text-[var(--brass)] flex items-center justify-center font-bold text-base sm:text-lg mb-2.5 sm:mb-4 border border-[var(--gold)]/30">
                   🌱
                 </div>
-                <h4 className="text-lg font-bold text-[var(--ink)]">Sứ mệnh</h4>
-                <p className="text-[var(--muted)] text-sm leading-relaxed mt-2.5">
+                <h4 className="text-[16px] sm:text-lg font-bold text-[var(--ink)]">Sứ mệnh</h4>
+                <p className="text-[var(--muted)] text-[13px] sm:text-sm leading-relaxed mt-1.5 sm:mt-2">
                   Vận dụng kinh nghiệm chuyên sâu, đội ngũ chuyên viên xuất sắc và tư duy tiếp thị hiện đại để nâng cao giá trị ngành bất động sản Việt Nam, mang đến giải pháp an cư và đầu tư bền vững.
                 </p>
               </div>
 
               {/* Giá trị cốt lõi */}
-              <div className="bg-[var(--bg)] border border-[var(--line)] rounded-2xl p-6 sm:p-7 relative hover:border-[var(--gold)] transition-all shadow-sm">
-                <div className="w-10 h-10 rounded-xl bg-[var(--gold-light)] text-[var(--brass)] flex items-center justify-center font-bold text-lg mb-4 border border-[var(--gold)]/30">
+              <div className="bg-[var(--bg)] border border-[var(--line)] rounded-2xl p-4 sm:p-7 relative hover:border-[var(--gold)] transition-all shadow-xs">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[var(--gold-light)] text-[var(--brass)] flex items-center justify-center font-bold text-base sm:text-lg mb-2.5 sm:mb-4 border border-[var(--gold)]/30">
                   💎
                 </div>
-                <h4 className="text-lg font-bold text-[var(--ink)]">Giá trị cốt lõi: Tâm – Tín</h4>
-                <p className="text-[var(--muted)] text-sm leading-relaxed mt-2.5">
+                <h4 className="text-[16px] sm:text-lg font-bold text-[var(--ink)]">Giá trị cốt lõi: Tâm – Tín</h4>
+                <p className="text-[var(--muted)] text-[13px] sm:text-sm leading-relaxed mt-1.5 sm:mt-2">
                   <b>Chất lượng, Đạo đức, Uy tín và Chuyên nghiệp</b> là kim chỉ nam trong mọi hành động. Sự minh bạch về thông tin và lợi ích khách hàng luôn là tôn chỉ hoạt động cao nhất.
                 </p>
               </div>
@@ -260,21 +260,21 @@ export default function Home() {
           </div>
 
           {/* Đối tác & Giải thưởng */}
-          <div className="mt-10 flex flex-wrap gap-2.5 justify-center pt-2">
-            <span className="inline-flex items-center border border-[var(--line)] rounded-full px-3.5 py-1.5 text-[13px] bg-[var(--bg)] text-[var(--ink)] font-medium shadow-2xs">
-              <em className="not-italic text-[var(--accent)] font-bold mr-1.5">🏆 2025</em>
+          <div className="mt-6 sm:mt-10 flex flex-wrap gap-2 sm:gap-2.5 justify-center pt-2">
+            <span className="inline-flex items-center border border-[var(--line)] rounded-full px-3 py-1 sm:px-3.5 sm:py-1.5 text-xs sm:text-[13px] bg-[var(--bg)] text-[var(--ink)] font-medium shadow-2xs">
+              <em className="not-italic text-[var(--accent)] font-bold mr-1 sm:mr-1.5">🏆 2025</em>
               Top 1 Đại lý phân phối Essensia Sky · Phú Long
             </span>
-            <span className="inline-flex items-center border border-[var(--line)] rounded-full px-3.5 py-1.5 text-[13px] bg-[var(--bg)] text-[var(--ink)] font-medium shadow-2xs">
-              <em className="not-italic text-[var(--accent)] font-bold mr-1.5">🏆 2025</em>
+            <span className="inline-flex items-center border border-[var(--line)] rounded-full px-3 py-1 sm:px-3.5 sm:py-1.5 text-xs sm:text-[13px] bg-[var(--bg)] text-[var(--ink)] font-medium shadow-2xs">
+              <em className="not-italic text-[var(--accent)] font-bold mr-1 sm:mr-1.5">🏆 2025</em>
               Top 1 Đại lý dự án Eco Village Saigon River · Ecopark
             </span>
-            <span className="inline-flex items-center border border-[var(--line)] rounded-full px-3.5 py-1.5 text-[13px] bg-[var(--bg)] text-[var(--ink)] font-medium shadow-2xs">
-              <em className="not-italic text-[var(--accent)] font-bold mr-1.5">🏆 2025</em>
+            <span className="inline-flex items-center border border-[var(--line)] rounded-full px-3 py-1 sm:px-3.5 sm:py-1.5 text-xs sm:text-[13px] bg-[var(--bg)] text-[var(--ink)] font-medium shadow-2xs">
+              <em className="not-italic text-[var(--accent)] font-bold mr-1 sm:mr-1.5">🏆 2025</em>
               Top 5 Đại lý xuất sắc toàn quốc · Masterise Homes
             </span>
-            <span className="inline-flex items-center border border-[var(--line)] rounded-full px-3.5 py-1.5 text-[13px] bg-[var(--bg)] text-[var(--ink)] font-medium shadow-2xs">
-              <em className="not-italic text-[var(--accent)] font-bold mr-1.5">🏆 2025</em>
+            <span className="inline-flex items-center border border-[var(--line)] rounded-full px-3 py-1 sm:px-3.5 sm:py-1.5 text-xs sm:text-[13px] bg-[var(--bg)] text-[var(--ink)] font-medium shadow-2xs">
+              <em className="not-italic text-[var(--accent)] font-bold mr-1 sm:mr-1.5">🏆 2025</em>
               Đại lý chiến lược hàng đầu The Filmore Đà Nẵng
             </span>
           </div>
@@ -282,36 +282,36 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section id="hoat-dong" className="max-w-[1140px] mx-auto px-4 sm:px-6 py-14 sm:py-16 scroll-mt-16">
-        <div className="text-xs tracking-[0.14em] uppercase text-[var(--brass)] font-bold">
+      <section id="hoat-dong" className="max-w-[1140px] mx-auto px-4 sm:px-6 py-8 sm:py-16 scroll-mt-14 sm:scroll-mt-16">
+        <div className="text-[10.5px] sm:text-xs tracking-[0.14em] uppercase text-[var(--brass)] font-bold">
           Hình ảnh thực tế &amp; Văn hóa doanh nghiệp
         </div>
-        <h2 className="text-2xl sm:text-[30px] font-bold text-[var(--ink)] mt-2">
+        <h2 className="text-xl sm:text-2xl md:text-[30px] font-bold text-[var(--ink)] mt-1.5 sm:mt-2 leading-snug">
           Sự kiện, đào tạo và dự án trọng điểm tại Smartland
         </h2>
-        <p className="text-[var(--muted)] max-w-[65ch] mt-2.5 text-base">
+        <p className="text-[var(--muted)] max-w-[65ch] mt-1.5 sm:mt-2 text-[13.5px] sm:text-base leading-relaxed">
           Những khoảnh khắc sinh động từ các chiến dịch Kick-off bùng nổ, Site tour khảo sát thực địa, hoạt động sản xuất hình ảnh flycam và lễ ký kết hợp tác cùng Chủ đầu tư.
         </p>
 
         {/* Team block */}
-        <div className="mt-8">
-          <p className="text-[13px] font-bold tracking-[0.08em] uppercase text-[var(--brass)] mb-3">
+        <div className="mt-5 sm:mt-8">
+          <p className="text-[11.5px] sm:text-[13px] font-bold tracking-[0.08em] uppercase text-[var(--brass)] mb-2 sm:mb-3">
             Đội ngũ &amp; Hoạt động thực tế
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-[1.25fr_1fr] gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-[1.25fr_1fr] gap-3 sm:gap-4">
             <figure className="relative rounded-2xl overflow-hidden bg-[var(--line)] md:row-span-2 group shadow-sm border border-[var(--line)]">
               <Image
                 src="/images/team_1.jpeg"
                 alt="Đội ngũ Smartland áo đỏ chụp ảnh tập thể trước tòa tháp căn hộ"
                 width={800}
                 height={600}
-                className="w-full h-full object-cover min-h-[260px] md:min-h-full block group-hover:scale-102 transition-transform duration-300"
+                className="w-full h-full object-cover min-h-[200px] sm:min-h-[260px] md:min-h-full block group-hover:scale-102 transition-transform duration-300"
               />
-              <figcaption className="absolute inset-x-0 bottom-0 pt-8 px-5 pb-4 text-white text-sm font-medium bg-gradient-to-t from-black/85 via-black/40 to-transparent">
+              <figcaption className="absolute inset-x-0 bottom-0 pt-6 px-3.5 pb-2.5 sm:pt-8 sm:px-5 sm:pb-4 text-white text-xs sm:text-sm font-medium bg-gradient-to-t from-black/85 via-black/40 to-transparent">
                 Đội ngũ chuyên án và marketing khảo sát thực địa dự án
               </figcaption>
             </figure>
-            <figure className="relative rounded-2xl overflow-hidden bg-[var(--line)] aspect-[3/2] group shadow-sm border border-[var(--line)]">
+            <figure className="relative rounded-2xl overflow-hidden bg-[var(--line)] aspect-[16/10] sm:aspect-[3/2] group shadow-sm border border-[var(--line)]">
               <Image
                 src="/images/team_2.jpeg"
                 alt="Đội ngũ đứng trên sân thượng nhìn ra hồ và khu đô thị"
@@ -319,11 +319,11 @@ export default function Home() {
                 height={400}
                 className="w-full h-full object-cover block group-hover:scale-102 transition-transform duration-300"
               />
-              <figcaption className="absolute inset-x-0 bottom-0 pt-8 px-5 pb-4 text-white text-sm font-medium bg-gradient-to-t from-black/85 via-black/40 to-transparent">
+              <figcaption className="absolute inset-x-0 bottom-0 pt-6 px-3.5 pb-2.5 sm:pt-8 sm:px-5 sm:pb-4 text-white text-xs sm:text-sm font-medium bg-gradient-to-t from-black/85 via-black/40 to-transparent">
                 Sản xuất hình ảnh, video &amp; góc quay flycam tại dự án
               </figcaption>
             </figure>
-            <figure className="relative rounded-2xl overflow-hidden bg-[var(--line)] aspect-[3/2] group shadow-sm border border-[var(--line)]">
+            <figure className="relative rounded-2xl overflow-hidden bg-[var(--line)] aspect-[16/10] sm:aspect-[3/2] group shadow-sm border border-[var(--line)]">
               <Image
                 src="/images/team_3.jpeg"
                 alt="Đội ngũ ngồi trên bậc thang vườn cảnh quan, tay tạo hình trái tim"
@@ -331,7 +331,7 @@ export default function Home() {
                 height={400}
                 className="w-full h-full object-cover block group-hover:scale-102 transition-transform duration-300"
               />
-              <figcaption className="absolute inset-x-0 bottom-0 pt-8 px-5 pb-4 text-white text-sm font-medium bg-gradient-to-t from-black/85 via-black/40 to-transparent">
+              <figcaption className="absolute inset-x-0 bottom-0 pt-6 px-3.5 pb-2.5 sm:pt-8 sm:px-5 sm:pb-4 text-white text-xs sm:text-sm font-medium bg-gradient-to-t from-black/85 via-black/40 to-transparent">
                 Tinh thần nhiệt huyết, gắn kết của đại gia đình Smartland
               </figcaption>
             </figure>
@@ -339,9 +339,9 @@ export default function Home() {
         </div>
 
         {/* Training block */}
-        <div className="mt-8">
-          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,340px)_1fr] gap-8 items-center bg-[var(--surface)] border border-[var(--line)] border-l-4 border-l-[var(--gold)] rounded-2xl p-6 sm:p-8 shadow-[0_4px_20px_rgba(25,28,33,0.03)]">
-            <figure className="relative rounded-xl overflow-hidden bg-[var(--line)] max-w-[360px] mx-auto lg:max-w-none w-full border border-[var(--line)] shadow-sm">
+        <div className="mt-5 sm:mt-8">
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,340px)_1fr] gap-4 sm:gap-8 items-center bg-[var(--surface)] border border-[var(--line)] border-l-4 border-l-[var(--gold)] rounded-2xl p-3.5 sm:p-8 shadow-[0_4px_20px_rgba(25,28,33,0.03)]">
+            <figure className="relative rounded-xl overflow-hidden bg-[var(--line)] max-w-[220px] sm:max-w-[340px] mx-auto lg:max-w-none w-full border border-[var(--line)] shadow-xs">
               <Image
                 src="/images/training.jpeg"
                 alt="Poster chương trình đào tạo chuyên sâu Vinhomes Green Paradise của Smart Property"
@@ -351,16 +351,16 @@ export default function Home() {
               />
             </figure>
             <div>
-              <span className="text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold block mb-1.5">
+              <span className="text-[10px] sm:text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold block mb-1">
                 Sự kiện &amp; Đào tạo dự án
               </span>
-              <h3 className="text-xl sm:text-[24px] font-bold text-[var(--ink)] leading-snug">
+              <h3 className="text-base sm:text-[24px] font-bold text-[var(--ink)] leading-snug">
                 Tổ chức các sự kiện Kick-off, Đào tạo &amp; Kích hoạt thương hiệu
               </h3>
-              <p className="text-[var(--muted)] mt-3 max-w-[54ch] leading-relaxed">
+              <p className="text-[var(--muted)] text-[13px] sm:text-base mt-2 sm:mt-3 max-w-[54ch] leading-relaxed">
                 Trước mỗi chiến dịch mở bán hay ra mắt dự án mới, Smartland luôn tổ chức các sự kiện quy mô từ Kick-off bùng nổ, Activation sôi động đến các buổi đào tạo chuyên sâu và Site tour trải nghiệm cho đội ngũ kinh doanh và đối tác.
               </p>
-              <p className="text-[var(--muted)] mt-2.5 max-w-[54ch] leading-relaxed">
+              <p className="text-[var(--muted)] text-[13px] sm:text-base mt-1.5 sm:mt-2.5 max-w-[54ch] leading-relaxed">
                 Chuyên viên Event MKT sẽ là người trực tiếp lên ý tưởng concept, điều phối tổ chức chỉn chu, giám sát nhận diện thương hiệu và bảo đảm chất lượng hình ảnh truyền thông lan tỏa rộng khắp.
               </p>
             </div>
@@ -368,35 +368,35 @@ export default function Home() {
         </div>
 
         {/* Projects and Partnership block */}
-        <div className="mt-8">
-          <p className="text-[13px] font-bold tracking-[0.08em] uppercase text-[var(--brass)] mb-3">
+        <div className="mt-5 sm:mt-8">
+          <p className="text-[11.5px] sm:text-[13px] font-bold tracking-[0.08em] uppercase text-[var(--brass)] mb-2 sm:mb-3">
             Hợp tác chiến lược &amp; Dòng sản phẩm
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-5">
             {/* Wide card */}
-            <figure className="md:col-span-2 grid grid-cols-1 md:grid-cols-[1.4fr_1fr] bg-[var(--surface)] border border-[var(--line)] rounded-2xl overflow-hidden shadow-sm">
+            <figure className="md:col-span-2 grid grid-cols-1 md:grid-cols-[1.4fr_1fr] bg-[var(--surface)] border border-[var(--line)] rounded-2xl overflow-hidden shadow-xs">
               <Image
                 src="/images/partnership.jpeg"
                 alt="Lễ ký kết hợp tác phát triển tổ hợp khách sạn Eco Central Park và Harmony Living Suite"
                 width={700}
                 height={466}
-                className="w-full aspect-[3/2] object-cover block h-full"
+                className="w-full aspect-[16/10] sm:aspect-[3/2] object-cover block h-full"
               />
-              <figcaption className="p-6 self-center">
-                <span className="text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold block mb-1.5">
+              <figcaption className="p-3.5 sm:p-6 self-center">
+                <span className="text-[10px] sm:text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold block mb-1">
                   Đối tác &amp; Sự kiện
                 </span>
-                <h3 className="text-lg font-bold text-[var(--ink)]">
+                <h3 className="text-[15px] sm:text-lg font-bold text-[var(--ink)]">
                   Lễ ký kết hợp tác chiến lược cùng các Chủ đầu tư
                 </h3>
-                <p className="mt-2 text-sm text-[var(--muted)] leading-relaxed">
+                <p className="mt-1 sm:mt-2 text-xs sm:text-sm text-[var(--muted)] leading-relaxed">
                   Đại diện Smartland phối hợp chặt chẽ với Chủ đầu tư và các đối tác, chuẩn bị chu đáo khâu tổ chức, ấn phẩm và ghi lại các dấu mốc hợp tác quan trọng.
                 </p>
               </figcaption>
             </figure>
 
             {/* Product card 1 */}
-            <figure className="bg-[var(--surface)] border border-[var(--line)] rounded-2xl overflow-hidden shadow-sm">
+            <figure className="bg-[var(--surface)] border border-[var(--line)] rounded-2xl overflow-hidden shadow-xs">
               <Image
                 src="/images/resort.jpeg"
                 alt="Toàn cảnh khu biệt thự nghỉ dưỡng ven biển"
@@ -404,21 +404,21 @@ export default function Home() {
                 height={450}
                 className="w-full aspect-[4/3] object-cover block"
               />
-              <figcaption className="p-5">
-                <span className="text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold block mb-1">
+              <figcaption className="p-3.5 sm:p-5">
+                <span className="text-[10px] sm:text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold block mb-1">
                   Dòng sản phẩm
                 </span>
-                <h3 className="text-lg font-bold text-[var(--ink)]">
+                <h3 className="text-[15px] sm:text-lg font-bold text-[var(--ink)]">
                   Dự án nghỉ dưỡng cao cấp
                 </h3>
-                <p className="mt-1.5 text-sm text-[var(--muted)] leading-relaxed">
+                <p className="mt-1 text-xs sm:text-sm text-[var(--muted)] leading-relaxed">
                   Bộ sưu tập biệt thự biển, căn hộ nghỉ dưỡng được bảo chứng bởi các thương hiệu khách sạn hàng đầu thế giới.
                 </p>
               </figcaption>
             </figure>
 
             {/* Product card 2 */}
-            <figure className="bg-[var(--surface)] border border-[var(--line)] rounded-2xl overflow-hidden shadow-sm">
+            <figure className="bg-[var(--surface)] border border-[var(--line)] rounded-2xl overflow-hidden shadow-xs">
               <Image
                 src="/images/urban.jpeg"
                 alt="Cụm tháp căn hộ cao tầng ven sông"
@@ -426,14 +426,14 @@ export default function Home() {
                 height={450}
                 className="w-full aspect-[4/3] object-cover block"
               />
-              <figcaption className="p-5">
-                <span className="text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold block mb-1">
+              <figcaption className="p-3.5 sm:p-5">
+                <span className="text-[10px] sm:text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold block mb-1">
                   Dòng sản phẩm
                 </span>
-                <h3 className="text-lg font-bold text-[var(--ink)]">
+                <h3 className="text-[15px] sm:text-lg font-bold text-[var(--ink)]">
                   Dự án đại đô thị hiện đại
                 </h3>
-                <p className="mt-1.5 text-sm text-[var(--muted)] leading-relaxed">
+                <p className="mt-1 text-xs sm:text-sm text-[var(--muted)] leading-relaxed">
                   Các dự án đại đô thị có vị trí đắc địa, pháp lý hoàn chỉnh, tiện ích đồng bộ và giá trị sinh lời bền vững.
                 </p>
               </figcaption>
@@ -445,18 +445,18 @@ export default function Home() {
       {/* Main Content & Aside: CHI TIẾT CÔNG VIỆC */}
       <div
         id="chi-tiet-cong-viec"
-        className="max-w-[1140px] mx-auto px-4 sm:px-6 py-14 sm:py-16 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_320px] gap-10 lg:gap-12 w-full scroll-mt-16"
+        className="max-w-[1140px] mx-auto px-4 sm:px-6 py-8 sm:py-16 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_320px] gap-8 lg:gap-12 w-full scroll-mt-14 sm:scroll-mt-16"
       >
-        <div id="mo-ta" className="min-w-0 scroll-mt-20">
+        <div id="mo-ta" className="min-w-0 scroll-mt-16 sm:scroll-mt-20">
           {/* Header Chi tiết công việc */}
-          <div className="mb-8 pb-5 border-b border-[var(--line)]">
-            <span className="text-xs font-bold tracking-[0.14em] uppercase text-[var(--brass)] block mb-1">
+          <div className="mb-5 sm:mb-8 pb-3.5 sm:pb-5 border-b border-[var(--line)]">
+            <span className="text-[10.5px] sm:text-xs font-bold tracking-[0.12em] sm:tracking-[0.14em] uppercase text-[var(--brass)] block mb-1">
               Thông tin tuyển dụng chính thức · Smartland
             </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-bold text-[var(--ink)] leading-tight">
+            <h2 className="text-xl sm:text-3xl lg:text-[34px] font-bold text-[var(--ink)] leading-tight">
               Chi tiết công việc
             </h2>
-            <div className="flex flex-wrap items-center gap-2.5 sm:gap-4 text-sm sm:text-base text-[var(--muted)] mt-2">
+            <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs sm:text-base text-[var(--muted)] mt-1.5 sm:mt-2">
               <span>Vị trí: <b className="text-[var(--ink)]">Chuyên Viên Event MKT (Hà Nội)</b></span>
               <span className="text-[var(--line)]">·</span>
               <span>Số lượng: <b className="text-[var(--ink)]">1</b></span>
@@ -466,26 +466,26 @@ export default function Home() {
           </div>
 
           {/* PHẦN 1: MÔ TẢ CÔNG VIỆC */}
-          <section className="mb-10">
-            <div className="flex items-start sm:items-center gap-3 mb-5">
-              <span className="inline-flex items-center justify-center px-3 py-1 rounded-md bg-[var(--gold-light)] text-[var(--brass)] text-xs font-bold uppercase tracking-wider border border-[var(--gold)]/30 whitespace-nowrap shrink-0 mt-0.5 sm:mt-0">
+          <section className="mb-7 sm:mb-10">
+            <div className="flex items-center gap-2 sm:gap-3 mb-3.5 sm:mb-5">
+              <span className="inline-flex items-center justify-center px-2.5 py-1 rounded-md bg-[var(--gold-light)] text-[var(--brass)] text-xs font-bold uppercase tracking-wider border border-[var(--gold)]/30 shrink-0 whitespace-nowrap select-none">
                 Phần 1
               </span>
-              <h3 className="text-xl sm:text-2xl font-bold text-[var(--ink)] leading-snug">
+              <h3 className="text-[17px] sm:text-2xl font-bold text-[var(--ink)] leading-snug">
                 Mô tả công việc
               </h3>
             </div>
 
-            <div className="space-y-4 sm:space-y-5">
+            <div className="space-y-3 sm:space-y-4">
               {/* 1 */}
-              <div className="bg-[var(--surface)] border border-[var(--line)] border-l-4 border-l-[var(--gold)] rounded-xl p-5 sm:p-6 shadow-[0_2px_12px_rgba(25,28,33,0.03)] hover:shadow-md transition-shadow">
-                <h4 className="text-base sm:text-lg font-bold text-[var(--ink)] flex items-start gap-2.5">
-                  <span className="flex-none inline-flex items-center justify-center w-6 h-6 rounded-full bg-[var(--brass)] text-white text-xs font-bold mt-0.5">
+              <div className="bg-[var(--surface)] border border-[var(--line)] border-l-4 border-l-[var(--gold)] rounded-xl p-3.5 sm:p-6 shadow-xs hover:shadow-sm transition-shadow">
+                <h4 className="text-[14.5px] sm:text-lg font-bold text-[var(--ink)] flex items-start gap-2.5 leading-snug">
+                  <span className="shrink-0 inline-flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[var(--brass)] text-white text-[11px] sm:text-xs font-bold mt-0.5">
                     1
                   </span>
                   <span>Quản lý và triển khai tổng thể hoạt động marketing khu vực</span>
                 </h4>
-                <ul className="diamond-list text-sm sm:text-[15px] mt-3 pl-1">
+                <ul className="diamond-list text-[13.5px] sm:text-[15px] mt-2 sm:mt-3 pl-0.5 sm:pl-1 space-y-1.5 sm:space-y-2">
                   <li>Tiếp nhận chiến lược truyền thông từ trụ sở chính và xây dựng kế hoạch triển khai tại khu vực miền Bắc.</li>
                   <li>Quản lý tiến độ và hiệu quả triển khai các hạng mục marketing: sự kiện, truyền thông hình ảnh, POSM, hoạt động kích hoạt thương hiệu.</li>
                   <li>Phối hợp cùng các phòng ban (kinh doanh, đào tạo, truyền thông) đảm bảo hoạt động thống nhất và hiệu quả.</li>
@@ -493,70 +493,70 @@ export default function Home() {
               </div>
 
               {/* 2 */}
-              <div className="bg-[var(--surface)] border border-[var(--line)] border-l-4 border-l-[var(--gold)] rounded-xl p-5 sm:p-6 shadow-[0_2px_12px_rgba(25,28,33,0.03)] hover:shadow-md transition-shadow">
-                <h4 className="text-base sm:text-lg font-bold text-[var(--ink)] flex items-start gap-2.5">
-                  <span className="flex-none inline-flex items-center justify-center w-6 h-6 rounded-full bg-[var(--brass)] text-white text-xs font-bold mt-0.5">
+              <div className="bg-[var(--surface)] border border-[var(--line)] border-l-4 border-l-[var(--gold)] rounded-xl p-3.5 sm:p-6 shadow-xs hover:shadow-sm transition-shadow">
+                <h4 className="text-[14.5px] sm:text-lg font-bold text-[var(--ink)] flex items-start gap-2.5 leading-snug">
+                  <span className="shrink-0 inline-flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[var(--brass)] text-white text-[11px] sm:text-xs font-bold mt-0.5">
                     2
                   </span>
                   <span>Lên kế hoạch &amp; điều phối sự kiện</span>
                 </h4>
-                <ul className="diamond-list text-sm sm:text-[15px] mt-3 pl-1">
+                <ul className="diamond-list text-[13.5px] sm:text-[15px] mt-2 sm:mt-3 pl-0.5 sm:pl-1 space-y-1.5 sm:space-y-2">
                   <li>Chủ động đề xuất concept, nội dung và kế hoạch tổ chức các sự kiện (Kick-off, Activation, đào tạo, site tour, v.v.) phù hợp từng dự án.</li>
                   <li>Trực tiếp giám sát toàn bộ quy trình tổ chức, từ chuẩn bị – vận hành – tổng kết, đảm bảo chuẩn mực tổ chức và chất lượng hình ảnh thương hiệu.</li>
                 </ul>
               </div>
 
               {/* 3 */}
-              <div className="bg-[var(--surface)] border border-[var(--line)] border-l-4 border-l-[var(--gold)] rounded-xl p-5 sm:p-6 shadow-[0_2px_12px_rgba(25,28,33,0.03)] hover:shadow-md transition-shadow">
-                <h4 className="text-base sm:text-lg font-bold text-[var(--ink)] flex items-start gap-2.5">
-                  <span className="flex-none inline-flex items-center justify-center w-6 h-6 rounded-full bg-[var(--brass)] text-white text-xs font-bold mt-0.5">
+              <div className="bg-[var(--surface)] border border-[var(--line)] border-l-4 border-l-[var(--gold)] rounded-xl p-3.5 sm:p-6 shadow-xs hover:shadow-sm transition-shadow">
+                <h4 className="text-[14.5px] sm:text-lg font-bold text-[var(--ink)] flex items-start gap-2.5 leading-snug">
+                  <span className="shrink-0 inline-flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[var(--brass)] text-white text-[11px] sm:text-xs font-bold mt-0.5">
                     3
                   </span>
                   <span>Sản xuất hình ảnh &amp; tư liệu truyền thông</span>
                 </h4>
-                <ul className="diamond-list text-sm sm:text-[15px] mt-3 pl-1">
+                <ul className="diamond-list text-[13.5px] sm:text-[15px] mt-2 sm:mt-3 pl-0.5 sm:pl-1 space-y-1.5 sm:space-y-2">
                   <li>Chụp ảnh, quay video và bay flycam phục vụ cho sự kiện, dự án, nhà mẫu và báo cáo tiến độ.</li>
                   <li>Phối hợp với bộ phận truyền thông trung tâm trong việc biên tập và bàn giao tư liệu để sử dụng đồng nhất trên các kênh truyền thông.</li>
                 </ul>
               </div>
 
               {/* 4 */}
-              <div className="bg-[var(--surface)] border border-[var(--line)] border-l-4 border-l-[var(--gold)] rounded-xl p-5 sm:p-6 shadow-[0_2px_12px_rgba(25,28,33,0.03)] hover:shadow-md transition-shadow">
-                <h4 className="text-base sm:text-lg font-bold text-[var(--ink)] flex items-start gap-2.5">
-                  <span className="flex-none inline-flex items-center justify-center w-6 h-6 rounded-full bg-[var(--brass)] text-white text-xs font-bold mt-0.5">
+              <div className="bg-[var(--surface)] border border-[var(--line)] border-l-4 border-l-[var(--gold)] rounded-xl p-3.5 sm:p-6 shadow-xs hover:shadow-sm transition-shadow">
+                <h4 className="text-[14.5px] sm:text-lg font-bold text-[var(--ink)] flex items-start gap-2.5 leading-snug">
+                  <span className="shrink-0 inline-flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[var(--brass)] text-white text-[11px] sm:text-xs font-bold mt-0.5">
                     4
                   </span>
                   <span>Quản lý đội ngũ &amp; nhà cung cấp</span>
                 </h4>
-                <ul className="diamond-list text-sm sm:text-[15px] mt-3 pl-1">
+                <ul className="diamond-list text-[13.5px] sm:text-[15px] mt-2 sm:mt-3 pl-0.5 sm:pl-1 space-y-1.5 sm:space-y-2">
                   <li>Phân công, hướng dẫn và kiểm soát công việc của Event Executive và cộng tác viên.</li>
                   <li>Tìm kiếm, làm việc và giám sát nhà cung cấp trong các hạng mục thi công, nhân sự sự kiện, quà tặng, hậu cần,... đảm bảo tiến độ và chi phí.</li>
                 </ul>
               </div>
 
               {/* 5 */}
-              <div className="bg-[var(--surface)] border border-[var(--line)] border-l-4 border-l-[var(--gold)] rounded-xl p-5 sm:p-6 shadow-[0_2px_12px_rgba(25,28,33,0.03)] hover:shadow-md transition-shadow">
-                <h4 className="text-base sm:text-lg font-bold text-[var(--ink)] flex items-start gap-2.5">
-                  <span className="flex-none inline-flex items-center justify-center w-6 h-6 rounded-full bg-[var(--brass)] text-white text-xs font-bold mt-0.5">
+              <div className="bg-[var(--surface)] border border-[var(--line)] border-l-4 border-l-[var(--gold)] rounded-xl p-3.5 sm:p-6 shadow-xs hover:shadow-sm transition-shadow">
+                <h4 className="text-[14.5px] sm:text-lg font-bold text-[var(--ink)] flex items-start gap-2.5 leading-snug">
+                  <span className="shrink-0 inline-flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[var(--brass)] text-white text-[11px] sm:text-xs font-bold mt-0.5">
                     5
                   </span>
                   <span>Hỗ trợ hành chính &amp; thiết kế cơ bản</span>
                 </h4>
-                <ul className="diamond-list text-sm sm:text-[15px] mt-3 pl-1">
+                <ul className="diamond-list text-[13.5px] sm:text-[15px] mt-2 sm:mt-3 pl-0.5 sm:pl-1 space-y-1.5 sm:space-y-2">
                   <li>Chuẩn bị và hoàn thiện hồ sơ, biên bản, thủ tục liên quan đến tổ chức sự kiện và marketing khu vực.</li>
                   <li>Thiết kế nhanh các ấn phẩm cơ bản (banner, poster, backdrop, bảng hiệu, thiệp mời...) khi cần gấp, đảm bảo tính thẩm mỹ và nhận diện thương hiệu.</li>
                 </ul>
               </div>
 
               {/* 6 */}
-              <div className="bg-[var(--surface)] border border-[var(--line)] border-l-4 border-l-[var(--gold)] rounded-xl p-5 sm:p-6 shadow-[0_2px_12px_rgba(25,28,33,0.03)] hover:shadow-md transition-shadow">
-                <h4 className="text-base sm:text-lg font-bold text-[var(--ink)] flex items-start gap-2.5">
-                  <span className="flex-none inline-flex items-center justify-center w-6 h-6 rounded-full bg-[var(--brass)] text-white text-xs font-bold mt-0.5">
+              <div className="bg-[var(--surface)] border border-[var(--line)] border-l-4 border-l-[var(--gold)] rounded-xl p-3.5 sm:p-6 shadow-xs hover:shadow-sm transition-shadow">
+                <h4 className="text-[14.5px] sm:text-lg font-bold text-[var(--ink)] flex items-start gap-2.5 leading-snug">
+                  <span className="shrink-0 inline-flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[var(--brass)] text-white text-[11px] sm:text-xs font-bold mt-0.5">
                     6
                   </span>
                   <span>Đại diện khu vực &amp; phối hợp đối tác</span>
                 </h4>
-                <ul className="diamond-list text-sm sm:text-[15px] mt-3 pl-1">
+                <ul className="diamond-list text-[13.5px] sm:text-[15px] mt-2 sm:mt-3 pl-0.5 sm:pl-1 space-y-1.5 sm:space-y-2">
                   <li>Là đầu mối đại diện công ty tại miền Bắc trong công tác sự kiện và marketing; trực tiếp làm việc với chủ đầu tư, đại lý, đối tác và các đơn vị phối hợp.</li>
                   <li>Đảm bảo mọi hoạt động quảng bá, sự kiện và truyền thông khu vực diễn ra thống nhất với định hướng tổng thể của công ty.</li>
                 </ul>
@@ -565,18 +565,18 @@ export default function Home() {
           </section>
 
           {/* PHẦN 2: YÊU CẦU CÔNG VIỆC */}
-          <section className="mb-10 pt-6 border-t border-[var(--line)]">
-            <div className="flex items-start sm:items-center gap-3 mb-5">
-              <span className="inline-flex items-center justify-center px-3 py-1 rounded-md bg-[var(--gold-light)] text-[var(--brass)] text-xs font-bold uppercase tracking-wider border border-[var(--gold)]/30 whitespace-nowrap shrink-0 mt-0.5 sm:mt-0">
+          <section className="mb-7 sm:mb-10 pt-5 sm:pt-6 border-t border-[var(--line)]">
+            <div className="flex items-center gap-2 sm:gap-3 mb-3.5 sm:mb-5">
+              <span className="inline-flex items-center justify-center px-2.5 py-1 rounded-md bg-[var(--gold-light)] text-[var(--brass)] text-xs font-bold uppercase tracking-wider border border-[var(--gold)]/30 shrink-0 whitespace-nowrap select-none">
                 Phần 2
               </span>
-              <h3 className="text-xl sm:text-2xl font-bold text-[var(--ink)] leading-snug">
+              <h3 className="text-[17px] sm:text-2xl font-bold text-[var(--ink)] leading-snug">
                 Yêu cầu công việc
               </h3>
             </div>
 
-            <div className="bg-[var(--surface)] border border-[var(--line)] rounded-2xl p-6 sm:p-8 shadow-[0_4px_16px_rgba(25,28,33,0.03)]">
-              <ul className="diamond-list text-sm sm:text-[15px] text-[var(--ink)] space-y-2.5">
+            <div className="bg-[var(--surface)] border border-[var(--line)] rounded-2xl p-3.5 sm:p-8 shadow-xs">
+              <ul className="diamond-list text-[13.5px] sm:text-[15px] text-[var(--ink)] space-y-2 sm:space-y-2.5">
                 <li>Tốt nghiệp Cao đẳng/Đại học chuyên ngành Marketing, Truyền thông, Quản trị kinh doanh, Sự kiện hoặc các ngành liên quan.</li>
                 <li>Có từ 3 năm kinh nghiệm trong lĩnh vực Marketing, Event, Activation hoặc Truyền thông; ưu tiên ứng viên từng phụ trách Marketing/Event khu vực hoặc ngành Bất động sản.</li>
                 <li>Có kinh nghiệm lập kế hoạch, điều phối và triển khai sự kiện từ khâu lên ý tưởng, chuẩn bị, vận hành đến tổng kết.</li>
@@ -593,17 +593,17 @@ export default function Home() {
           </section>
 
           {/* PHẦN 3: QUYỀN LỢI & CƠ HỘI PHÁT TRIỂN */}
-          <section className="mb-10 pt-6 border-t border-[var(--line)]">
-            <div className="flex items-start sm:items-center gap-3 mb-5">
-              <span className="inline-flex items-center justify-center px-3 py-1 rounded-md bg-[var(--gold-light)] text-[var(--brass)] text-xs font-bold uppercase tracking-wider border border-[var(--gold)]/30 whitespace-nowrap shrink-0 mt-0.5 sm:mt-0">
+          <section className="mb-7 sm:mb-10 pt-5 sm:pt-6 border-t border-[var(--line)]">
+            <div className="flex items-center gap-2 sm:gap-3 mb-3.5 sm:mb-5">
+              <span className="inline-flex items-center justify-center px-2.5 py-1 rounded-md bg-[var(--gold-light)] text-[var(--brass)] text-xs font-bold uppercase tracking-wider border border-[var(--gold)]/30 shrink-0 whitespace-nowrap select-none">
                 Phần 3
               </span>
-              <h3 className="text-xl sm:text-2xl font-bold text-[var(--ink)] leading-snug">
+              <h3 className="text-[17px] sm:text-2xl font-bold text-[var(--ink)] leading-snug">
                 Quyền lợi &amp; Chế độ đãi ngộ tại Smartland
               </h3>
             </div>
 
-            <ul className="diamond-list text-sm sm:text-[15px] text-[var(--ink)] space-y-2">
+            <ul className="diamond-list text-[13.5px] sm:text-[15px] text-[var(--ink)] space-y-1.5 sm:space-y-2">
               <li>Thu nhập cạnh tranh theo năng lực (Lương cứng thỏa thuận + Phụ cấp công tác + Thưởng hiệu quả sự kiện/dự án).</li>
               <li>Cơ hội trực tiếp phụ trách mảng marketing - sự kiện cho các siêu dự án bất động sản hàng đầu và làm việc với những Chủ đầu tư uy tín nhất Việt Nam.</li>
               <li>Được trao quyền chủ động, môi trường làm việc đề cao tính sáng tạo, linh hoạt và tôn trọng ý tưởng đóng góp.</li>
@@ -614,43 +614,43 @@ export default function Home() {
           </section>
 
           {/* PHẦN 4: QUY TRÌNH TUYỂN CHỌN */}
-          <section className="pt-6 border-t border-[var(--line)]">
-            <div className="flex items-start sm:items-center gap-3 mb-5">
-              <span className="inline-flex items-center justify-center px-3 py-1 rounded-md bg-[var(--gold-light)] text-[var(--brass)] text-xs font-bold uppercase tracking-wider border border-[var(--gold)]/30 whitespace-nowrap shrink-0 mt-0.5 sm:mt-0">
+          <section className="pt-5 sm:pt-6 border-t border-[var(--line)]">
+            <div className="flex items-center gap-2 sm:gap-3 mb-3.5 sm:mb-5">
+              <span className="inline-flex items-center justify-center px-2.5 py-1 rounded-md bg-[var(--gold-light)] text-[var(--brass)] text-xs font-bold uppercase tracking-wider border border-[var(--gold)]/30 shrink-0 whitespace-nowrap select-none">
                 Phần 4
               </span>
-              <h3 className="text-xl sm:text-2xl font-bold text-[var(--ink)] leading-snug">
+              <h3 className="text-[17px] sm:text-2xl font-bold text-[var(--ink)] leading-snug">
                 Quy trình ứng tuyển
               </h3>
             </div>
 
-            <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 mt-4">
-              <li className="bg-[var(--surface)] border border-[var(--line)] border-t-[3px] border-t-[var(--gold)] rounded-xl p-4 font-medium text-[15px] leading-snug shadow-sm">
-                <span className="block text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold mb-1.5">
+            <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3.5 mt-3 sm:mt-4">
+              <li className="bg-[var(--surface)] border border-[var(--line)] border-t-[3px] border-t-[var(--gold)] rounded-xl p-3 sm:p-4 font-medium text-[13px] sm:text-[15px] leading-snug shadow-xs">
+                <span className="block text-[10.5px] sm:text-[11px] tracking-wider uppercase text-[var(--brass)] font-bold mb-1">
                   Bước 1
                 </span>
                 Gửi CV &amp; Portfolio (hình ảnh/video sự kiện) qua Zalo
               </li>
-              <li className="bg-[var(--surface)] border border-[var(--line)] border-t-[3px] border-t-[var(--gold)] rounded-xl p-4 font-medium text-[15px] leading-snug shadow-sm">
-                <span className="block text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold mb-1.5">
+              <li className="bg-[var(--surface)] border border-[var(--line)] border-t-[3px] border-t-[var(--gold)] rounded-xl p-3 sm:p-4 font-medium text-[13px] sm:text-[15px] leading-snug shadow-xs">
+                <span className="block text-[10.5px] sm:text-[11px] tracking-wider uppercase text-[var(--brass)] font-bold mb-1">
                   Bước 2
                 </span>
                 Phỏng vấn chuyên môn &amp; trao đổi kinh nghiệm
               </li>
-              <li className="bg-[var(--surface)] border border-[var(--line)] border-t-[3px] border-t-[var(--gold)] rounded-xl p-4 font-medium text-[15px] leading-snug shadow-sm">
-                <span className="block text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold mb-1.5">
+              <li className="bg-[var(--surface)] border border-[var(--line)] border-t-[3px] border-t-[var(--gold)] rounded-xl p-3 sm:p-4 font-medium text-[13px] sm:text-[15px] leading-snug shadow-xs">
+                <span className="block text-[10.5px] sm:text-[11px] tracking-wider uppercase text-[var(--brass)] font-bold mb-1">
                   Bước 3
                 </span>
                 Trao đổi tình huống tổ chức sự kiện &amp; kế hoạch triển khai
               </li>
-              <li className="bg-[var(--surface)] border border-[var(--line)] border-t-[3px] border-t-[var(--gold)] rounded-xl p-4 font-medium text-[15px] leading-snug shadow-sm">
-                <span className="block text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold mb-1.5">
+              <li className="bg-[var(--surface)] border border-[var(--line)] border-t-[3px] border-t-[var(--gold)] rounded-xl p-3 sm:p-4 font-medium text-[13px] sm:text-[15px] leading-snug shadow-xs">
+                <span className="block text-[10.5px] sm:text-[11px] tracking-wider uppercase text-[var(--brass)] font-bold mb-1">
                   Bước 4
                 </span>
                 Thống nhất chế độ đãi ngộ &amp; tiếp nhận công việc
               </li>
             </ol>
-            <p className="mt-4 text-[var(--muted)] text-sm">
+            <p className="mt-3 sm:mt-4 text-[var(--muted)] text-xs sm:text-sm">
               Thông tin chi tiết về các dự án phụ trách và chính sách thu nhập sẽ được trao đổi trực tiếp cùng ứng viên.
             </p>
           </section>
@@ -662,8 +662,8 @@ export default function Home() {
 
       {/* Footer (Theo chuẩn thông tin smartland.vn) */}
       <footer className="bg-[var(--surface)] text-[var(--muted)] border-t border-[var(--line)] mt-auto">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 py-10 text-[13px]">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-[var(--line)]">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 py-8 sm:py-10 text-xs sm:text-[13px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 pb-6 sm:pb-8 border-b border-[var(--line)]">
             {/* Col 1 */}
             <div>
               <Image
@@ -673,40 +673,40 @@ export default function Home() {
                 height={38}
                 className="h-8 w-auto block object-contain mb-3"
               />
-              <p className="text-[var(--ink)] font-semibold text-sm leading-snug">
+              <p className="text-[var(--ink)] font-semibold text-xs sm:text-sm leading-snug">
                 CÔNG TY TNHH BẤT ĐỘNG SẢN SMARTLAND
               </p>
-              <p className="mt-2 text-[var(--muted)] leading-relaxed">
+              <p className="mt-1.5 sm:mt-2 text-[var(--muted)] leading-relaxed text-xs sm:text-sm">
                 21 năm tiên phong trong tư vấn, tiếp thị và phân phối bất động sản cao cấp hàng đầu tại Việt Nam.
               </p>
             </div>
 
             {/* Col 2 */}
-            <div className="space-y-2">
-              <b className="text-[var(--ink)] uppercase text-xs tracking-wider block mb-1">
+            <div className="space-y-1.5 sm:space-y-2">
+              <b className="text-[var(--ink)] uppercase text-[11px] sm:text-xs tracking-wider block mb-1">
                 Địa chỉ văn phòng
               </b>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-xs sm:text-sm">
                 <strong className="text-[var(--ink)]">Trụ sở chính:</strong> Tầng 17, Tòa nhà Vincom Center, 72 Lê Thánh Tôn, Bến Nghé, Quận 1, TP. Hồ Chí Minh
               </p>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-xs sm:text-sm">
                 <strong className="text-[var(--ink)]">Chi nhánh Hà Nội:</strong> Tòa nhà Sao Mai, 19 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội
               </p>
             </div>
 
             {/* Col 3: HR Contact */}
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-3.5 sm:gap-4 bg-[var(--bg)] sm:bg-transparent p-3 sm:p-0 rounded-xl sm:rounded-none border sm:border-0 border-[var(--line)]">
               <Image
                 src="/images/hr_phuong_avatar.jpg"
                 alt="Ảnh Ms Phuong, Chuyên viên Nhân sự Smartland"
                 width={60}
                 height={60}
-                className="w-14 h-14 rounded-full object-cover border-2 border-[var(--gold)] flex-none shadow-sm"
+                className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover border-2 border-[var(--gold)] shrink-0 shadow-sm"
               />
               <div className="grid leading-snug">
-                <b className="text-[15px] text-[var(--ink)]">Ms Phuong</b>
-                <span className="text-[13px] text-[var(--muted)]">Chuyên viên Nhân sự Smartland</span>
-                <span className="font-bold text-[var(--accent)] text-base tabular-nums mt-1">
+                <b className="text-sm sm:text-[15px] text-[var(--ink)]">Ms Phuong</b>
+                <span className="text-xs sm:text-[13px] text-[var(--muted)]">Chuyên viên Nhân sự Smartland</span>
+                <span className="font-bold text-[var(--accent)] text-sm sm:text-base tabular-nums mt-0.5">
                   0915 531 904
                 </span>
                 <a
@@ -721,7 +721,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[var(--muted)]">
+          <div className="pt-4 sm:pt-6 flex flex-col sm:flex-row items-center justify-between gap-2.5 sm:gap-4 text-center sm:text-left text-[11px] sm:text-xs text-[var(--muted)]">
             <span>
               © 2004 - 2026 Smartland. Tất cả các quyền được bảo lưu.
             </span>
@@ -733,6 +733,38 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Floating Bottom Bar for Mobile (Chỉ xuất hiện trên màn hình điện thoại) */}
+      <div
+        className="fixed bottom-0 inset-x-0 z-40 bg-[var(--surface)]/95 backdrop-blur-md border-t border-[var(--line)] px-4 py-2.5 shadow-[0_-4px_25px_rgba(25,28,33,0.1)] sm:hidden flex items-center justify-between gap-3"
+        style={{ paddingBottom: "max(10px, env(safe-area-inset-bottom))" }}
+      >
+        <div className="flex items-center gap-2.5 min-w-0">
+          <Image
+            src="/images/hr_phuong_avatar.jpg"
+            alt="Ms Phuong"
+            width={38}
+            height={38}
+            className="w-9 h-9 rounded-full object-cover border border-[var(--gold)] shrink-0 shadow-sm"
+          />
+          <div className="min-w-0">
+            <div className="text-xs font-bold text-[var(--ink)] truncate">
+              Ms Phuong · Nhân sự
+            </div>
+            <div className="text-[11.5px] text-[var(--accent)] font-bold tracking-tight">
+              0915 531 904
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://zalo.me/0915531904"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary inline-flex items-center justify-center !text-white text-xs font-bold px-4 py-2 rounded-lg whitespace-nowrap shadow-sm hover:bg-[var(--accent-hover)] active:scale-95 transition-transform"
+        >
+          Ứng tuyển Zalo
+        </a>
+      </div>
     </div>
   );
 }
