@@ -3,7 +3,7 @@ import QuickApplyCard from "@/components/QuickApplyCard";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-[var(--bg)] text-[var(--ink)]">
+    <div className="min-h-screen flex flex-col bg-[var(--bg)] text-[var(--ink)] pb-16 sm:pb-0">
       {/* Header (Cố định ở trên cùng khi cuộn trên PC) */}
       <header className="sticky top-0 z-50 bg-[var(--surface)]/95 backdrop-blur-md border-b border-[var(--line)] shadow-[0_2px_16px_rgba(25,28,33,0.04)]">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between gap-4">
@@ -372,15 +372,17 @@ export default function Home() {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {/* Wide card */}
-                <figure className="md:col-span-2 grid grid-cols-1 md:grid-cols-[1.4fr_1fr] bg-[var(--surface)] border border-[var(--line)] rounded-2xl overflow-hidden shadow-sm">
-                  <Image
-                    src="/images/partnership.jpeg"
-                    alt="Lễ ký kết hợp tác phát triển tổ hợp khách sạn Eco Central Park và Harmony Living Suite"
-                    width={700}
-                    height={466}
-                    className="w-full aspect-[3/2] object-cover block h-full"
-                  />
-                  <figcaption className="p-6 self-center">
+                <figure className="md:col-span-2 flex flex-col md:grid md:grid-cols-[1.4fr_1fr] bg-[var(--surface)] border border-[var(--line)] rounded-2xl overflow-hidden shadow-sm">
+                  <div className="w-full aspect-[16/10] sm:aspect-[3/2] md:aspect-auto md:h-full overflow-hidden bg-[var(--line)]">
+                    <Image
+                      src="/images/partnership.jpeg"
+                      alt="Lễ ký kết hợp tác phát triển tổ hợp khách sạn Eco Central Park và Harmony Living Suite"
+                      width={700}
+                      height={466}
+                      className="w-full h-full object-cover block"
+                    />
+                  </div>
+                  <figcaption className="p-5 sm:p-6 flex flex-col justify-center">
                     <span className="text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold block mb-1.5">
                       Đối tác &amp; Sự kiện
                     </span>
@@ -394,15 +396,17 @@ export default function Home() {
                 </figure>
 
                 {/* Product card 1 */}
-                <figure className="bg-[var(--surface)] border border-[var(--line)] rounded-2xl overflow-hidden shadow-sm">
-                  <Image
-                    src="/images/resort.jpeg"
-                    alt="Toàn cảnh khu biệt thự nghỉ dưỡng ven biển"
-                    width={600}
-                    height={450}
-                    className="w-full aspect-[4/3] object-cover block"
-                  />
-                  <figcaption className="p-5">
+                <figure className="bg-[var(--surface)] border border-[var(--line)] rounded-2xl overflow-hidden shadow-sm flex flex-col">
+                  <div className="w-full aspect-[4/3] overflow-hidden bg-[var(--line)]">
+                    <Image
+                      src="/images/resort.jpeg"
+                      alt="Toàn cảnh khu biệt thự nghỉ dưỡng ven biển"
+                      width={600}
+                      height={450}
+                      className="w-full h-full object-cover block"
+                    />
+                  </div>
+                  <figcaption className="p-5 flex-1 flex flex-col justify-center">
                     <span className="text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold block mb-1">
                       Dòng sản phẩm
                     </span>
@@ -416,15 +420,17 @@ export default function Home() {
                 </figure>
 
                 {/* Product card 2 */}
-                <figure className="bg-[var(--surface)] border border-[var(--line)] rounded-2xl overflow-hidden shadow-sm">
-                  <Image
-                    src="/images/urban.jpeg"
-                    alt="Cụm tháp căn hộ cao tầng ven sông"
-                    width={600}
-                    height={450}
-                    className="w-full aspect-[4/3] object-cover block"
-                  />
-                  <figcaption className="p-5">
+                <figure className="bg-[var(--surface)] border border-[var(--line)] rounded-2xl overflow-hidden shadow-sm flex flex-col">
+                  <div className="w-full aspect-[4/3] overflow-hidden bg-[var(--line)]">
+                    <Image
+                      src="/images/urban.jpeg"
+                      alt="Cụm tháp căn hộ cao tầng ven sông"
+                      width={600}
+                      height={450}
+                      className="w-full h-full object-cover block"
+                    />
+                  </div>
+                  <figcaption className="p-5 flex-1 flex flex-col justify-center">
                     <span className="text-[11px] tracking-[0.1em] uppercase text-[var(--brass)] font-bold block mb-1">
                       Dòng sản phẩm
                     </span>
@@ -739,7 +745,10 @@ export default function Home() {
       </footer>
 
       {/* Floating Bottom Bar for Mobile (Chỉ xuất hiện trên màn hình điện thoại) */}
-      <div className="fixed bottom-0 inset-x-0 z-40 bg-[var(--surface)]/95 backdrop-blur-md border-t border-[var(--line)] px-4 py-2.5 shadow-[0_-4px_20px_rgba(25,28,33,0.08)] sm:hidden flex items-center justify-between gap-3">
+      <div
+        className="fixed bottom-0 inset-x-0 z-40 bg-[var(--surface)]/95 backdrop-blur-md border-t border-[var(--line)] px-4 py-2.5 shadow-[0_-4px_20px_rgba(25,28,33,0.08)] sm:hidden flex items-center justify-between gap-3"
+        style={{ paddingBottom: "max(10px, env(safe-area-inset-bottom))" }}
+      >
         <div className="flex items-center gap-2.5 min-w-0">
           <Image
             src="/images/hr_phuong_avatar.jpg"
