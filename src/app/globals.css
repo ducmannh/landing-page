@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+:root {
+  --gold: #C69867;
+  --gold-soft: #E3BB8E;
+  --on-navy: #FFFFFF;
+  --on-navy-muted: #CFC6C3;
+  --bg: #F7F6F5;
+  --surface: #FFFFFF;
+  --ink: #1F1A1C;
+  --muted: #625A5C;
+  --line: #E6E1DF;
+  --accent: #921F27;
+  --accent-ink: #FFFFFF;
+  --brass: #96672F;
+  --hero-a: #FFFFFF;
+  --hero-b: #F6EFEC;
+  --gold-line: rgba(198, 152, 103, 0.5);
+  --font-display: var(--font-lexend), system-ui, sans-serif;
+  --font-body: var(--font-be-vietnam-pro), system-ui, -apple-system, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141113;
+    --surface: #1E191B;
+    --ink: #EEE8E6;
+    --muted: #B0A6A7;
+    --line: #342C2E;
+    --accent: #C8424B;
+    --accent-ink: #FFFFFF;
+    --brass: #E3BB8E;
+    --hero-a: #1E191B;
+    --hero-b: #2A1C1F;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #141113;
+  --surface: #1E191B;
+  --ink: #EEE8E6;
+  --muted: #B0A6A7;
+  --line: #342C2E;
+  --accent: #C8424B;
+  --accent-ink: #FFFFFF;
+  --brass: #E3BB8E;
+  --hero-a: #1E191B;
+  --hero-b: #2A1C1F;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  text-wrap: balance;
+  margin: 0;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--brass);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* Custom Hero Background decoration */
+.hero-band-bg {
+  background: radial-gradient(90% 120% at 100% 0%, var(--hero-b) 0%, var(--hero-a) 62%);
+}
+
+.hero-band-circles::before {
+  content: "";
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  width: 420px;
+  height: 420px;
+  border: 1px solid var(--gold-line);
+  border-radius: 50%;
+  box-shadow: 0 0 0 40px transparent, 0 0 0 41px var(--gold-line);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.hero-band-circles::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+/* List with diamond bullets */
+ul.diamond-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+ul.diamond-list li {
+  position: relative;
+  padding-left: 22px;
+}
+
+ul.diamond-list li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  background: var(--gold);
+  transform: rotate(45deg);
+}
