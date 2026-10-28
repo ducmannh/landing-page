@@ -33,7 +33,6 @@
 
 html {
   scroll-behavior: smooth;
-  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -43,7 +42,6 @@ body {
   font-size: 16px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -117,27 +115,30 @@ nextjs-portal,
 }
 
 /* List with diamond bullets */
-ul.diamond-list {
+ul.diamond-list,
+.diamond-list {
   list-style: none;
   padding: 0;
-  margin: 16px 0 0;
+  margin: 10px 0 0;
   display: grid;
-  gap: 12px;
+  row-gap: 7px;
 }
 
-ul.diamond-list li {
+ul.diamond-list li,
+.diamond-list li {
   position: relative;
-  padding-left: 24px;
-  line-height: 1.6;
+  padding-left: 20px;
+  line-height: 1.5;
 }
 
-ul.diamond-list li::before {
+ul.diamond-list li::before,
+.diamond-list li::before {
   content: "";
   position: absolute;
   left: 2px;
-  top: 0.55em;
-  width: 8px;
-  height: 8px;
+  top: 0.52em;
+  width: 6.5px;
+  height: 6.5px;
   background: var(--gold);
   transform: rotate(45deg);
 }
