@@ -17,9 +17,9 @@ const lexend = Lexend({
 });
 
 export const metadata: Metadata = {
-  title: "Smartland tuyển Giám đốc Dự án",
+  title: "Smartland tuyển Chuyên Viên Event MKT (Hà Nội)",
   description:
-    "Dẫn dắt hoạt động kinh doanh của một hoặc nhiều dự án bất động sản, từ giai đoạn chuẩn bị, xây dựng lực lượng chuyên án đến triển khai bán hàng và tối ưu kết quả. Vị trí dành cho người có tư duy hệ thống, giỏi đào tạo đội ngũ, phối hợp đa phòng ban tốt và đủ bản lĩnh làm việc trực tiếp với Chủ đầu tư.",
+    "Smartland tuyển dụng Chuyên Viên Event MKT (Hà Nội). Số lượng: 1 - Thời hạn: Không thời hạn. Quản lý và triển khai hoạt động marketing khu vực, điều phối sự kiện (Kick-off, Activation, Site tour), sản xuất tư liệu hình ảnh flycam và làm việc với đối tác, Chủ đầu tư.",
   icons: {
     icon: "/images/logo.png",
   },
